@@ -1,7 +1,9 @@
 <img style="width: 300px;" src="https://s8.uupload.ir/files/tscoin-cover_(3)_(1)_3kpn.png" alt="tscoin_img">
 
-- [![Instagram](https://s8.uupload.ir/files/1491580658-yumminkysocialmedia06_83104_lxr0.png)](https://www.instagram.com/tahasite)
-- [![chanel Telegram](https://s8.uupload.ir/files/telegram_macos_bigsur_icon_189662_0fj4.png)](https://t.me/tahasite_chanel)
+[![Instagram](https://s8.uupload.ir/files/1491580658-yumminkysocialmedia06_83104_lxr0.png)](https://www.instagram.com/tahasite)
+[![chanel Telegram](https://s8.uupload.ir/files/telegram_macos_bigsur_icon_189662_0fj4.png)](https://t.me/tahasite_chanel)
+
+<br>
 
 [![DEMO](https://s8.uupload.ir/files/demo_git_y3xw.png)](https://t.me/tscoinsbot)
 [![DEMO](https://s8.uupload.ir/files/دمو_git_nxhe.png)](https://t.me/tscoinsbot)

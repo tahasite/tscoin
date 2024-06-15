@@ -1,5 +1,8 @@
 <img style="width: 300px;" src="https://s8.uupload.ir/files/tscoin-cover_(3)_(1)_3kpn.png" alt="tscoin_img">
 
+- Instagram: [tahasite](https://www.instagram.com/tahasite)
+- Telegram: [tahasite_chanel](https://t.me/tahasite_chanel)
+
 # tscoin EA
 Similar to NotCoin script Tscoin
 

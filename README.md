@@ -3,6 +3,9 @@
 - [![Instagram](https://s8.uupload.ir/files/1491580658-yumminkysocialmedia06_83104_lxr0.png)](https://www.instagram.com/tahasite)
 - [![chanel Telegram](https://s8.uupload.ir/files/telegram_macos_bigsur_icon_189662_0fj4.png)](https://t.me/tahasite_chanel)
 
+[![DEMO](https://s8.uupload.ir/files/demo_git_y3xw.png)](https://t.me/tscoinsbot)
+[![DEMO](https://s8.uupload.ir/files/دمو_git_nxhe.png)](https://t.me/tscoinsbot)
+
 # tscoin EA
 Similar to NotCoin script Tscoin
 

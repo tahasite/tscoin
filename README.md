@@ -49,6 +49,7 @@ You will need a hosting service that supports creating a Node.js project. Follow
    - After navigating to your project folder, run the following commands:
      ```sh
      npm install
+     npm start
      ```
 
 6. **Restart Your Node.js Server:**

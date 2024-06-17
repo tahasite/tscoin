@@ -48,9 +48,9 @@ You will need a hosting service that supports creating a Node.js project. Follow
 5. **Install Required Packages:**
    - After navigating to your project folder, run the following commands:
      ```sh
-     npm start
-     npm install express-session
-     npm install express body-parser fs
+npm install
+npm start /* or */
+node server.js
      ```
 
 6. **Restart Your Node.js Server:**

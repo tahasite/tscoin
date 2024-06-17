@@ -152,9 +152,8 @@ By following these instructions, you should be able to set up and run your Node.
 5. **نصب بسته‌های مورد نیاز:**
    - بعد از وارد شدن به پوشه پروژه خود، دستورات زیر را اجرا کنید:
      ```sh
+     npm install
      npm start
-     npm install express-session
-     npm install express body-parser fs
      ```
 
 6. **ری‌استارت کردن سرور Node.js:**

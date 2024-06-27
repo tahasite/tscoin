@@ -96,7 +96,7 @@ You will need a hosting service that supports creating a Node.js project. Follow
 5. **Install Required Packages:**
    - After navigating to your project folder, run the following commands:
      ```sh
-     npm start
+     npm install
      npm install telegraf
      npm install -g forever
      ```
@@ -200,7 +200,7 @@ By following these instructions, you should be able to set up and run your Node.
 5. **نصب بسته‌های مورد نیاز:**
    - بعد از ورود به پوشه پروژه، دستورات زیر را اجرا کنید:
      ```sh
-     npm start
+     npm install
      npm install telegraf
      npm install -g forever
      ```

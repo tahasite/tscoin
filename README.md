@@ -96,7 +96,7 @@ You will need a hosting service that supports creating a Node.js project. Follow
 5. **Install Required Packages:**
    - After navigating to your project folder, run the following commands:
      ```sh
-npm install @tahasite/tscoinbot
+     npm install @tahasite/tscoinbot
      ```
 
 6. **Start the Bot with Forever:**
@@ -150,7 +150,7 @@ By following these instructions, you should be able to set up and run your Node.
 5. **نصب بسته‌های مورد نیاز:**
    - بعد از وارد شدن به پوشه پروژه خود، دستورات زیر را اجرا کنید:
      ```sh
-    npm install @tahasite/tscoin
+     npm install @tahasite/tscoin
      npm start
      ```
 
@@ -198,7 +198,7 @@ By following these instructions, you should be able to set up and run your Node.
 5. **نصب بسته‌های مورد نیاز:**
    - بعد از ورود به پوشه پروژه، دستورات زیر را اجرا کنید:
      ```sh
-npm install @tahasite/tscoinbot
+     npm install @tahasite/tscoinbot
      ```
 
 6. **راه‌اندازی دائمی ربات با Forever:**

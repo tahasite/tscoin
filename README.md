@@ -9,11 +9,11 @@
 [![DEMO](https://s8.uupload.ir/files/دمو_git_nxhe.png)](https://t.me/tscoinsbot)
 
 
-<video controls style="width: 300px;">
-    <source src="https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4">
-</video>
-Install Web Tscoin at localhost
-نصب وب اسکریپت در لوکال هاست 
+# Video Install Web Tscoin at localhost / نصب وب اسکریپت در لوکال هاست 
+
+[مشاهده ویدیو نصب](https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4)
+
+
 
 # tscoin EA
 Similar to NotCoin script Tscoin

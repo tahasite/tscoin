@@ -9,10 +9,17 @@
 [![DEMO](https://s8.uupload.ir/files/دمو_git_nxhe.png)](https://t.me/tscoinsbot)
 
 
-# Video Install Web Tscoin at localhost / نصب وب اسکریپت در لوکال هاست 
+# Install Tscoin at localhost
 
-[مشاهده ویدیو نصب](https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4)
+[Viewing Video Web](https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4)
 
+[Viewing Video Bot](https://www.namasha.com/videos/dl/7468431826-480p/Install-Tscoin-Bot-localhost-Vscode-480p.mp4)
+
+# نصب Tscoin در لوکال هاست 
+
+[مشاهده نصب web](https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4)
+
+[مشاهده نصب Bot](https://www.namasha.com/videos/dl/7468431826-480p/Install-Tscoin-Bot-localhost-Vscode-480p.mp4)
 
 
 # tscoin EA

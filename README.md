@@ -11,11 +11,15 @@
 
 # Install Tscoin at localhost
 
+Need to install node.js and VScode on the system
+
 [Viewing Video Web](https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4)
 
 [Viewing Video Bot](https://www.namasha.com/videos/dl/7468431826-480p/Install-Tscoin-Bot-localhost-Vscode-480p.mp4)
 
 # نصب Tscoin در لوکال هاست 
+
+نیاز به نصب بودن node.js و VScode روی سیستم
 
 [مشاهده نصب web](https://www.namasha.com/videos/dl/7468431498-480p/Install-Tscoin-Web-localhost-Vscode-480p.mp4)
 

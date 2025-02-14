@@ -1,18 +1,9 @@
-
 *.php linguist-language=PHP
-
-
 *.html linguist-language=HTML
-
-
 *.css linguist-language=CSS
-
-
-*.js linguist-language=JavaScript
-
-
-*.json linguist-language=JSON
-
-
 *.js linguist-language=JavaScript
 *.json linguist-language=JSON
+*.md linguist-language=Markdown
+
+# Ignoring node_modules directory for linguist analysis
+node_modules/* linguist-vendored=true

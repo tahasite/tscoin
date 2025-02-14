@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@tahasite/tscoin": "^1.0.8"
+  }
+}

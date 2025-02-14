@@ -1,0 +1,987 @@
+/**
+ * author : tahasite
+ */
+ 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(
+    -13deg,
+    rgb(22, 22, 22) 15%,
+    rgb(139, 102, 241) 202%
+  );
+  min-height: 100vh;
+}
+
+img {
+  cursor: pointer;
+}
+
+#coinCount {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "TCB";
+}
+
+#username {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: "DancingScript";
+}
+
+#level {
+  font-size: 17px;
+  font-family: "BarlowCondensed";
+  margin-bottom: 15px;
+}
+
+#coinCount,
+#username,
+#level {
+  color: #fff;
+}
+
+.Sign_Level button {
+  color: #fff;
+}
+
+.box_Level {
+  background: aliceblue;
+  padding: 8px 5px;
+  margin-top: 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  width: -webkit-fill-available;
+  justify-content: center;
+  transition: scale 0.3s;
+  font-size: 13px;
+}
+
+.box_Level:hover {
+  scale: 1.1;
+  transition: scale 0.3s;
+}
+
+.Sign_Level {
+  background: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Sign_Level:hover {
+  scale: 1.1;
+  transition: scale 0.3s;
+}
+
+img#coinImage {
+  width: 100%;
+  height: 15em;
+  transition: scale 0.2s;
+}
+img#coinImage:hover {
+  scale: 0.9;
+  transition: scale 0.5s;
+}
+.coin-animation {
+  position: fixed;
+  font-size: 1.5rem;
+  color: #fff;
+  animation: moveUpFadeOut 1s forwards;
+  margin-top: 50px;
+}
+@keyframes moveUpFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+.box_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 3em;
+  border: 2px solid #ddd;
+  margin: auto;
+  width: 15vw;
+  height: 85vh;
+}
+
+.Energy_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  margin-top: 12px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  margin-bottom: -30px;
+}
+
+svg.lucide.lucide-zap {
+  color: #fff;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #00ff00;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+img#coin_number {
+  width: 28px;
+  height: 27px;
+}
+
+.img_coin {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
+  background: #333;
+  padding: 0px 18px;
+  padding-top: 16px;
+  border-radius: 13px;
+  margin-bottom: 10px;
+}
+
+@font-face {
+  font-family: "TCB";
+  src: url("font/TCB_____.TTF");
+}
+
+@font-face {
+  font-family: "DancingScript";
+  src: url("font/DancingScript-Bold.ttf");
+}
+
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url("font/BarlowCondensed-Medium.ttf");
+}
+
+@font-face {
+  font-family: "ArchivoNarrow";
+  src: url("font/ArchivoNarrow-Medium.ttf");
+}
+
+@font-face {
+  font-family: "corbel";
+  src: url("font/corbelz.ttf");
+}
+
+#up_content,
+#page_support_content {
+  font-family: "corbel";
+}
+
+.Energy_box,
+#coinup {
+  font-family: "ArchivoNarrow";
+}
+
+.menu_main {
+  font-family: "BarlowCondensed";
+}
+
+img#coinImage {
+  box-shadow: 5px 9px 100px rgba(255, 207, 58, 1);
+  border-radius: 100%;
+  background: #ffce00;
+}
+
+img#claimPrizeButton {
+  width: 200px;
+  transition: scale 0.4s;
+  height: 180px;
+}
+
+#claimPrizeButton:hover {
+  scale: 0.9;
+  transition: scale 0.4s;
+}
+
+.menu_main {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+button#box_main {
+  border-top-left-radius: 8px;
+}
+
+button#support {
+  border-top-right-radius: 8px;
+}
+
+.menu_main button {
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: #24272e;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+}
+.content.active {
+  display: block;
+}
+
+img.img_coinup {
+  width: 30px;
+}
+
+.number_coinup {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  width: fit-content;
+  background: #333;
+  padding: 7px 15px;
+  border-radius: 20px;
+  position: fixed;
+  left: 6px;
+  top: 8px;
+  align-items: center;
+  z-index: 3;
+}
+
+div#coinup {
+  font-size: 15px;
+  color: #fff;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 85%;
+  z-index: 4;
+  height: 70vh;
+  border-radius: 23px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 9px;
+  top: 3px;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#gift_24 img,
+#codegift img,
+#subcoin img,
+#tlbot img,
+#topplay img,
+#transfer img {
+  width: 80px;
+  height: 80px;
+}
+
+.item_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+div.items_up {
+  background: azure;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: scale 0.4s, color 0.3s;
+  width: 25%;
+}
+
+div.items_up:hover {
+  scale: 1.1;
+  transition: scale 0.4s;
+}
+
+div.items_up:hover button {
+  color: blueviolet;
+  transition: color 0.3s;
+}
+
+div.items_up button {
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.giftPopup_box {
+  display: flex;
+  justify-content: center;
+  height: -webkit-fill-available;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.codegiftPopup_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 18px;
+  height: -webkit-fill-available;
+}
+
+input#codeInput {
+  padding: 10px 50px;
+  border-radius: 45px;
+  border: 1.5px solid #000;
+}
+
+button#submitCodeButton {
+  padding: 10px 50px;
+  background: cadetblue;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+button#submitCodeButton:hover {
+  scale: 0.9;
+  transition: scale 0.3s;
+}
+
+.codegiftPopup_box p {
+  font-size: 12px;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.flex_bot_box img {
+  width: 80px;
+  height: 80px;
+}
+
+.flex_bot_box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fill-available;
+  row-gap: 25px;
+}
+
+.items_bot {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background: #ddd;
+  padding: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.items_bot:hover {
+  scale: 0.9;
+  transition: scale 0.3s;
+}
+
+img.icon_bot_coin {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+
+.box_bot_coin {
+  background: burlywood;
+  position: relative;
+  top: 12px;
+  padding: 7px 15px;
+  width: fit-content;
+  border-radius: 25px;
+}
+
+#buyOption1 p {
+  font-size: 13px;
+  text-wrap: balance;
+}
+
+p.toggleAutoClick_text {
+  font-size: 10px;
+  position: relative;
+  top: -18px;
+}
+
+button#toggleAutoClick {
+  background: #ddd;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.popup_link {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 9999;
+  display: none;
+  width: 85%;
+  height: 70vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: red;
+  transition: color 0.3s;
+}
+
+.button-36 {
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+.loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.page_wallet_telegram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: -webkit-fill-available;
+}
+
+div#message {
+  text-align: center;
+}
+
+#telegramPopup p,
+#coinPopup p {
+  text-align: center;
+  text-wrap: balance;
+  font-size: 13px;
+}
+
+#coinPopup img {
+  width: 325px;
+  margin-bottom: 20px;
+}
+
+#page_support_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: aliceblue;
+  padding: 30px;
+  row-gap: 10px;
+  border-radius: 7px;
+}
+
+#page_support_content img {
+  width: 85px;
+  box-shadow: 0px 0px 26px rgb(0 0 0);
+  border-radius: 50%;
+}
+
+.box_username {
+  display: inline-flex;
+  gap: 1px;
+  align-items: center;
+  background: darksalmon;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.box_email {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  background: #4eafe0cc;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+
+.button-72 {
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(
+    rgba(179, 132, 201, 0.84),
+    rgba(57, 31, 91, 0.84) 50%
+  );
+  border-radius: 42px;
+  border-width: 0;
+  box-shadow: rgba(57, 31, 91, 0.24) 0 2px 2px,
+    rgba(179, 132, 201, 0.4) 0 8px 12px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  font-family: Quicksand, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 18px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 4px,
+    rgba(255, 255, 255, 0.2) 0 0 12px, rgba(57, 31, 91, 0.6) 1px 1px 4px,
+    rgba(57, 31, 91, 0.32) 4px 4px 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+}
+
+.button-72:hover {
+  background-image: linear-gradient(#b384c9, #391f5b 50%);
+}
+
+@media (min-width: 768px) {
+  .button-72 {
+    font-size: 15px;
+    padding: 18px 34px;
+  }
+}
+
+.box_emailForm {
+  background: #ddd;
+  padding: 47px 35px;
+  border-radius: 10px;
+}
+
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+input#emailInput {
+  border: 1px solid #7aa7c7;
+  border-radius: 3px;
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 6.4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #e1ecf4;
+}
+
+form#emailForm {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: center;
+  gap: 10px;
+}
+
+div#support_content {
+  margin-top: 15px;
+}
+
+button#link_tl {
+  gap: 10px;
+}
+
+.box_wallet_buttom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.box_icon_Support {
+  width: 100%;
+  margin-bottom: -42px;
+}
+
+svg.lucide.lucide-headset {
+  position: relative;
+  top: -20px;
+  left: -17px;
+}
+
+p#botstop {
+  padding: 5px 10px;
+  background: red;
+  color: #ffb7b7;
+  border-radius: 33px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+p#botstart {
+  padding: 5px 10px;
+  background: green;
+  color: #c3ffb7;
+  border-radius: 33px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.top-players {
+  padding: 0;
+  list-style: none;
+  counter-reset: ranking;
+}
+.top-players li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  counter-increment: ranking;
+}
+.top-players li::before {
+  content: counter(ranking) ".";
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.page_topplay img {
+  width: 100px;
+}
+
+div#pagetopplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_wallbut {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  row-gap: 20px;
+  gap: 15px;
+}
+
+.box_wallbut p {
+  font-size: 10px;
+  text-wrap: balance;
+  margin-top: -6px;
+  text-align: center;
+}
+
+.box_wallbut {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 68vh;
+  row-gap: 20px;
+  gap: 15px;
+  background: #fab700;
+  border-radius: 7px;
+  border: 3px solid #333;
+  box-shadow: 0.5rem 0.5rem 0 var(--color-shadow, currentColor);
+}
+
+.box_wallbut input {
+  background: none;
+  border: 2px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+#transferCoinsBtn {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: scale 0.4s;
+}
+
+#transferCoinsBtn:hover {
+  scale: 0.9;
+  transition: scale 0.4s;
+}
+
+.box_wallbut img {
+  width: 75px;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu_main {
+    width: 95%;
+  }
+}
+
+button#box_main,
+button#up,
+button#support {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.menu_main button.active {
+  background-color: #191c21;
+}
+
+.box_subfollow {
+  display: flex;
+  height: 83vh;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box_subfollow button {
+  padding: 15px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: scale 0.4s;
+}
+
+.box_subfollow button:hover {
+  scale: 1.1;
+  transition: scale 0.4s;
+}
+
+#subscribeYouTube {
+  background: red;
+  color: #fff;
+}
+
+#followTelegram {
+  background: rgb(0, 170, 255);
+}
+
+#startTelegramBot {
+  background: blueviolet;
+  color: #fff;
+}
+
+#followInstagram {
+  background: rgb(255, 0, 76);
+  color: #fff;
+}
+
+svg.lucide.lucide-coins {
+  margin-bottom: -5px;
+  color: #ffa000;
+}
+
+img,
+div {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .box_main {
+    width: 60vw;
+    height: 70vh;
+  }
+  .menu_main {
+    position: fixed;
+    bottom: 0px;
+  }
+  div#box_main_content {
+    margin-bottom: 8vh;
+  }
+  #username,
+  #level {
+    font-size: 20px;
+  }
+  .img_coin {
+    padding: 0px 20px;
+    padding-top: 16px;
+  }
+  img#coinImage {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  #username,
+  #level {
+    font-size: 14px;
+  }
+  .img_coin {
+    padding: 0px 10px;
+    padding-top: 16px;
+  }
+}

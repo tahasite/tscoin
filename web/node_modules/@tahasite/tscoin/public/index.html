@@ -1,0 +1,351 @@
+<!--─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+─██████████████─██████████████─██████──██████─██████████████─██████████████─██████████─██████████████─██████████████─
+─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░██──██░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─
+─██████░░██████─██░░██████░░██─██░░██──██░░██─██░░██████░░██─██░░██████████─████░░████─██████░░██████─██░░██████████─
+─────██░░██─────██░░██──██░░██─██░░██──██░░██─██░░██──██░░██─██░░██───────────██░░██───────██░░██─────██░░██─────────
+─────██░░██─────██░░██████░░██─██░░██████░░██─██░░██████░░██─██░░██████████───██░░██───────██░░██─────██░░██████████─
+─────██░░██─────██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██───██░░██───────██░░██─────██░░░░░░░░░░██─
+─────██░░██─────██░░██████░░██─██░░██████░░██─██░░██████░░██─██████████░░██───██░░██───────██░░██─────██░░██████████─
+─────██░░██─────██░░██──██░░██─██░░██──██░░██─██░░██──██░░██─────────██░░██───██░░██───────██░░██─────██░░██─────────
+─────██░░██─────██░░██──██░░██─██░░██──██░░██─██░░██──██░░██─██████████░░██─████░░████─────██░░██─────██░░██████████─
+─────██░░██─────██░░██──██░░██─██░░██──██░░██─██░░██──██░░██─██░░░░░░░░░░██─██░░░░░░██─────██░░██─────██░░░░░░░░░░██─
+─────██████─────██████──██████─██████──██████─██████──██████─██████████████─██████████─────██████─────██████████████─
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────-->
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click for Coins</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <!----------------- box_main ----------------->
+    <div class="content" id="box_main_content">
+        <div class="box_main">
+            <div id="box_bots">
+                <p id="botstart" style="display: none;">Auto-Click is running</p>
+                <!-- <p id="botstop" style="display: none;">Auto-Click is stopped</p> -->
+            </div>
+            <div id="username">Loading...</div>
+            <div class="img_coin">
+                <img id="coin_number" src="img/dollar.png" alt="" />
+                <div id="coinCount">Loading...</div>
+            </div>
+            <div id="level">Level: 0</div>
+            <img src="img/coin.png" id="coinImage" alt="Click me for coins" />
+
+            <div id="levelUpButton" class="box_Level">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-up">
+                    <path d="m17 11-5-5-5 5" />
+                    <path d="m17 18-5-5-5 5" />
+                </svg>
+                <button id="levelUpButton">Level Up</button>
+            </div>
+
+            <div class="Energy_box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap">
+                    <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                </svg>
+                <div id="credit">Credit: Loading...</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" id="progressBarFill"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!----------------- End ------------------->
+
+    <!----------------- up_content ----------------->
+    <div class="content" id="up_content">
+        <div class="item_flex">
+            <div class="items_up" id="gift_24">
+                <img src="img/gift.png" alt="gift" />
+                <button>Bonus</button>
+            </div>
+            <div class="items_up" id="codegift">
+                <img src="img/discount-coupon.png" alt="code" />
+                <button>Enter Code</button>
+            </div>
+            <div class="items_up" id="subcoin">
+                <img src="img/subscription.png" alt="subscribe" />
+                <button>Subscribe</button>
+            </div>
+            <div class="items_up" id="tlbot">
+                <img src="img/chat-bot.png" alt="bot" />
+                <button>Bot</button>
+            </div>
+            <div class="items_up" id="topplay">
+                <img src="img/top-player.png" alt="bot" />
+                <button>Top Player</button>
+            </div>
+            <div class="items_up" id="transfer">
+                <img src="img/transfer.png" alt="bot" />
+                <button>Transfer</button>
+            </div>
+        </div>
+
+        <!-- پاپ‌آپ‌ها -->
+        <div id="giftPopup" class="popup">
+            <div class="giftPopup_box">
+                <img id="claimPrizeButton" src="img/gift-box.png" alt="" />
+                <p>You can claim the prize again every 24 hours</p>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+
+        <div id="codegiftPopup" class="popup">
+            <div class="codegiftPopup_box">
+                <label for="codeInput">Enter your code:</label>
+                <input type="text" id="codeInput" placeholder="Enter 8-digit code" />
+                <button id="submitCodeButton">Submit</button>
+                <p>
+                    Enter your bonus code in the box above and redeem it for coins.
+                    (Each bonus code can be used once)
+                </p>
+            </div>
+            <span class="close">&times;</span>
+        </div>
+
+        <div id="subcoinPopup" class="popup">
+
+            <p style="text-align: center;">Receive a 100k <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coins">
+                    <circle cx="8" cy="8" r="6" />
+                    <path d="M18.09 10.37A6 6 0 1 1 10.34 18" />
+                    <path d="M7 6h1v4" />
+                    <path d="m16.71 13.88.7.71-2.82 2.82" />
+                </svg> coin bonus by supporting us on social media!</p>
+            <div class="box_subfollow">
+
+                <button id="subscribeYouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube">
+                        <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                        <path d="m10 15 5-3-5-3z" />
+                    </svg>
+                    Subscribe YouTube</button>
+                <button id="followTelegram">
+                    <svg width="24px" height="24px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.5 1.5L0.5 6.5L4.5 8.5L10.5 4.5L6.5 9.5L12.5 13.5L14.5 1.5Z" stroke="#000000" stroke-linejoin="round" />
+                    </svg>
+                    Follow Telegram</button>
+                <button id="startTelegramBot">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bot-message-square">
+                        <path d="M12 6V2H8" />
+                        <path d="m8 18-4 4V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2Z" />
+                        <path d="M2 12h2" />
+                        <path d="M9 11v2" />
+                        <path d="M15 11v2" />
+                        <path d="M20 12h2" />
+                    </svg>
+                    Start Telegram Bot</button>
+                <button id="followInstagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                    Follow Instagram</button>
+
+
+            </div>
+
+
+
+            <span class="close">&times;</span>
+        </div>
+
+        <div id="tlbotPopup" class="popup">
+            <div class="flex_bot_box">
+
+                <div id="purchaseOptions">
+                    <div class="items_bot" id="buyOption1">
+                        <img src="img/bot.png" alt="">
+                        <button>Buy BOT auto-click <div class="box_bot_coin"><img class="icon_bot_coin" src="img/dollar.png" alt="">500K</div></button>
+                        <br>
+                        <p>With the purchase and activation of this bot, it automatically clicks every 3 seconds and earns coins for you 24/7.</p>
+                    </div>
+                </div>
+                <button id="toggleAutoClick">Delete Auto-Click</button>
+                <p class="toggleAutoClick_text">"You need to repurchase the auto-click bot to reactivate it after disabling and removing it."</p>
+
+            </div>
+            <span class="close">&times;</span>
+        </div>
+
+        <div id="topplayPopup" class="popup">
+
+            <div id="pagetopplay" class="page_topplay">
+                <img src="img/reward.png" alt="reward">
+                <h1>Top 5 Players</h1>
+                <ol class="top-players" id="topPlayersList">
+                </ol>
+            </div>
+
+            <span class="close">&times;</span>
+        </div>
+
+
+        <div id="tlbotPopup" class="popup">
+
+            <div class="box_wallbut">
+                <img src="img/transfer2.png" alt="transfer">
+                <input type="text" id="recipientUsername" placeholder="Recipient Username">
+                <p>Enter the correct and complete username of the person you want to transfer the coins to. The user must be registered and present in the system.</p>
+                <input type="number" id="amount" placeholder="Amount">
+                <p>Enter the number of coins you want to transfer. It must be more than 100k.</p>
+                <button id="transferCoinsBtn">Transfer Coins</button>
+            </div>
+
+
+            <span class="close">&times;</span>
+        </div>
+
+
+        <div class="number_coinup">
+            <div id="coinup">Loading...</div>
+            <img class="img_coinup" src="img/dollar.png" alt="coin" />
+        </div>
+    </div>
+
+    </div>
+
+    <!----------------- End ------------------->
+
+    <!----------------- support_content ----------------->
+    <div class="content" id="support_content">
+
+        <div id="page_support_content">
+
+            <div class="box_icon_Support">
+                <a href="/support.html" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headset">
+                        <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                        <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                    </svg>
+                </a>
+            </div>
+
+            <img src="img/Avatar_user.png" alt="Avatar_user">
+
+            <div id="logoutButton" class="Sign_Level">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    <polyline points="16 17 21 12 16 7" />
+                    <line x1="21" x2="9" y1="12" y2="12" />
+                </svg>
+                <button id="logoutButton">Sign out</button>
+            </div>
+
+            <img id="Avatar_User" src="" alt="">
+            <div class="box_username">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+                <div id="usernameAccount">Loading...</div>
+            </div>
+            <div class="box_email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <div id="emailDisplay"></div>
+            </div>
+
+            <div class="box_emailForm">
+                <form id="emailForm">
+                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                    <button type="submit" class="button-8" role="button">SAVE</button>
+                </form>
+            </div>
+
+
+
+            <div class="box_wallet_buttom">
+
+                <div class="button_tl">
+                    <button class="button-72" role="button" id="link_tl"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                        </svg>Link Telegram Wallet</button>
+                </div>
+                <div class="button_coin">
+                    <button class="button-72" role="button" id="link_coin"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bitcoin">
+                            <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727" />
+                        </svg>Link Coin Wallet</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- پاپ‌آپ برای وصل کردن کیف پول تلگرام -->
+        <div id="telegramPopup" class="popup_link">
+            <span class="close-btn" onclick="closePopup('telegramPopup')">Close</span>
+            <div class="page_wallet_telegram">
+                <img src="img/wallet-telegram.png" alt="wallet telegram">
+                <br>
+                <button id="linktowallet" class="button-36" role="button">LINK TO WALLET</button>
+
+                <div id="loadingOverlay" class="loading-overlay">Loading...</div>
+                <div id="message_tl" class="loading-overlay">This feature is not yet implemented.</div>
+                <br>
+                <p>By clicking the "LINK TO WALLET" button, you will be linked to the Telegram bot for the digital currency wallet. In the future, you will be able to transfer and use your coins in your wallet. Please note that this feature is disabled until the coins are listed and priced. If you have any issues or questions, please contact <a href="/support.html" target="_blank">support</a>.</p>
+
+            </div>
+        </div>
+
+        <!-- پاپ‌آپ برای وصل کردن کیف پول Coin -->
+        <div id="coinPopup" class="popup_link">
+            <span class="close-btn" onclick="closePopup('coinPopup')">Close</span>
+            <div class="page_wallet_telegram">
+                <img src="img/wallet-coin.svg" alt="wallet telegram">
+                <br>
+                <button id="linkcionwallet" class="button-36" role="button">LINK TO WALLET</button>
+
+                <div id="loadingOverlaycion" class="loading-overlay">Loading...</div>
+                <div id="message_coin" class="loading-overlay">This feature is not yet implemented.</div>
+                <br>
+                <p>By clicking the "LINK TO WALLET" button, you will be linked to the Telegram bot for the digital currency wallet. In the future, you will be able to transfer and use your coins in your wallet. Please note that this feature is disabled until the coins are listed and priced. If you have any issues or questions, please contact <a href="/support.html" target="_blank">support</a>.</p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <!----------------- End ------------------->
+
+    <div class="menu_main">
+        <button id="box_main" class="active">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pickaxe">
+                <path d="M14.531 12.469 6.619 20.38a1 1 0 1 1-3-3l7.912-7.912" />
+                <path d="M15.686 4.314A12.5 12.5 0 0 0 5.461 2.958 1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393" />
+                <path d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z" />
+                <path d="M19.686 8.314a12.501 12.501 0 0 1 1.356 10.225 1 1 0 0 1-1.751-.119 22 22 0 0 0-3.393-6.319" />
+            </svg>
+            Home
+        </button>
+        <button id="up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify">
+                <line x1="3" x2="21" y1="6" y2="6" />
+                <line x1="3" x2="21" y1="12" y2="12" />
+                <line x1="3" x2="21" y1="18" y2="18" />
+            </svg>
+            Menu</button>
+        <button id="support">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+            </svg>
+            Account</button>
+    </div>
+
+    <script src="js/box_main.js"></script>
+    <script src="js/up.js"></script>
+    <script src="js/account.js"></script>
+</body>
+
+</html>

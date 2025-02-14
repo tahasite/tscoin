@@ -1,4 +1,18 @@
+
 *.php linguist-language=PHP
+
+
 *.html linguist-language=HTML
+
+
 *.css linguist-language=CSS
-*.js linguist-language=NodeJS
+
+
+*.js linguist-language=JavaScript
+
+
+*.json linguist-language=JSON
+
+
+*.js linguist-language=JavaScript
+*.json linguist-language=JSON
